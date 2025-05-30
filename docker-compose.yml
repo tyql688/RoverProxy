@@ -1,0 +1,8 @@
+services:
+  nginx-proxy:
+    build: .
+    container_name: rover-proxy
+    restart: unless-stopped
+    ports:
+      # 宿主机端口:容器端口 - 修改PROXY_PORT环境变量来更改宿主机端口
+      - "${PROXY_PORT:-2233}:2233"
