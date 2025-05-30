@@ -1,0 +1,15 @@
+{
+  "name": "proxy-js",
+  "version": "1.0.0",
+  "description": "js 反向代理服务",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env $(cat .env) node server.js"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "express": "^4.19.2"
+  },
+  "author": "tyql688",
+  "license": "MIT"
+}

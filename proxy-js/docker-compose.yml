@@ -1,0 +1,7 @@
+services:
+  nginx-proxy:
+    build: .
+    container_name: rover-proxy
+    restart: unless-stopped
+    ports:
+      - "${PROXY_PORT:-2233}:${PROXY_PORT:-2233}"
